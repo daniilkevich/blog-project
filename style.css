@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+/*Adaptive sizes*/
+.col-dt-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+.col-dt-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-dt-4 {
+  flex: 0 0 33.33332%;
+  max-width: 33.33332%;
+}
+.col-dt-5 {
+  flex: 0 0 41.66665%;
+  max-width: 41.66665%;
+}
+.col-dt-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-dt-9 {
+  flex: 0 0 74.99997%;
+  max-width: 74.99997%;
+}
+.col-dt-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+/*Mobile XS*/
+@media (max-width: 767px) {
+}
+/*Tablet sm*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .col-sm-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+/*Laptop md*/
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .col-md-3 {
+    flex: 0 0 24.99999%;
+    max-width: 24.99999%;
+  }
+  .col-md-4 {
+    flex: 0 0 33.33332%;
+    max-width: 33.33332%;
+  }
+  .col-md-5 {
+    flex: 0 0 41.66666%;
+    max-width: 41.66666%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+.logo {
+  margin: 0px 30px 0px 20px;
+}
+.menu-wrapper {
+}
+.header-row {
+  height: 60px;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100%;
+}
+.menu li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(88, 81, 81);
+}
+.menu li :hover {
+  color: black;
+}
+.slider-img {
+  width: 100%;
+}
+.slider-section {
+  position: relative;
+}
+.slider-title {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  width: 64.666%;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  top: 40%;
+}
+.recipes-block {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  width: 34.666%;
+  padding: 15px 0px;
+  border-bottom: 2px solid rgb(93, 226, 93);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 80%;
+}
+
+.recipes-title {
+}
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.article-block {
+  margin-bottom: 15px;
+  background-color: rgb(247, 242, 242);
+}
+.recept-img {
+  max-width: 100%;
+  height: auto;
+}
+.descr-block {
+  padding: 20px 20px 0px 20px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+.header-descr-block {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+.main-descr-block {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(88, 81, 81);
+}
+.rowfooter {
+  display: flex;
+  justify-content: space-around;
+}
+.reedmore-btn {
+  padding: 0px 10px 0px 10px;
+  margin: 0px 20px 0px 20px;
+  border-left: 2px solid grey;
+}
+.like-btn {
+  padding: 0px 10px 0px 10px;
+  margin: 0px 20px 0px 20px;
+}
+.footer-descr-block {
+  background-color: rgba(231, 225, 225, 0.795);
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 5px 0px;
+}
+.position-up {
+  margin-top: -132px;
+}
+.recipes-section {
+  background-color: rgb(247, 242, 242);
+}
+.viev-title {
+  padding: 10px;
+  border-bottom: 2px solid #000;
+}
+.viev-block {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  width: 34.666%;
+  padding: 20px 0px;
+}
+.viev-section {
+  background-color: rgb(84, 202, 55);
+}
+.row3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.food-post {
+  margin: 0 2% 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  padding: 0px;
+}
+.food-post-img {
+  max-width: 100%;
+  height: auto;
+}
+.food-post-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0px;
+}
+.food-post-font-icon {
+  margin: 0 auto;
+  font-size: 5px;
+  width: 20%;
+  background-color: rgb(158, 221, 99);
+  color: rgb(158, 221, 99);
+}
+.food-post-content {
+  text-align: center;
+  color: rgb(114, 108, 108);
+  margin: 15px 0px;
+  padding: 0 10%;
+}
+.food-post-btn {
+  text-align: center;
+  margin: 15px 0px;
+}
+.post-btn {
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: rgb(158, 221, 99);
+  margin: 15px 0px;
+  color: #fff;
+}
+.button-wrapper {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 75%;
+}
+.slider-btn {
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: rgb(158, 221, 99);
+  margin: 15px 0px;
+  color: #fff;
+}
+.slider-section {
+  position: relative;
+}
+.row4 {
+  display: flex;
+}
+.about-block {
+}
+.about-block-title,
+.mission-block-title,
+.contact-block-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 15px 0px;
+}
+.about-block-items {
+  color: rgb(114, 108, 108);
+}
+.about-list li {
+  padding: 10px;
+}
+
+.about-list a {
+  text-decoration: none;
+  color: rgb(114, 108, 108);
+}
+.about-list a:hover {
+  color: rgb(84, 202, 55);
+  text-decoration: underline;
+}
+.mission-block-content,
+.contact-block-content {
+  line-height: 1.5;
+  color: rgb(114, 108, 108);
+}
+.mbc {
+  margin-bottom: 15px;
+}
+.contact-block-phone {
+  margin: 15px 0px;
+  color: rgb(114, 108, 108);
+}
+.contact-block-email a {
+  text-decoration: none;
+  color: rgb(114, 108, 108);
+}
+.contact-block-social a {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+}
+.contact-block-social {
+  margin-top: 10px;
+}
